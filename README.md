@@ -1,7 +1,9 @@
 
 Azure ExpressRoute is an Enterprise-class network platform that provides you with a scalable, high-performance solution for connecting your private network to Microsoft’s network.  You can connect to Microsoft directly using ExpressRoute Direct, or you can connect to Microsoft through a mature ecosystem of partners using ExpressRoute.  You can configure up to two different network peering types to allow an ExpressRoute circuit to connect to private workloads running in your Azure VNets and to public workloads available on the Microsoft Network.
 This deployment guide is focused on helping you deploy and optimize the Azure private peering, which enables connectivity between your private network and your Azure VNets over ExpressRoute.  First, we will review the fundamentals of ExpressRoute and study the key components and steps involved in creating your first ExpressRoute circuit.  Next, we will discuss the value of the VNet-based “hub and spoke” architecture and explore how route advertisement works when you connect ExpressRoute to this footprint.  Finally, we’ll learn how the Azure VPN Gateway can be added to provide an extra layer of path redundancy. 
-ExpressRoute Fundamentals
+
+# ExpressRoute Fundamentals
+
 Azure ExpressRoute, as an end-to-end solution, is comprised of several key components. Some are physical, and some are logical. Some are managed by Microsoft, and some by you. The key components of the ExpressRoute platform are listed below. If you are comfortable with configuring and initializing an ExpressRoute circuit, feel free to skip this section.
 
 1.	The first component is a pair of physical Enterprise-class routers, physically located in over 50 strategic peering locations and network exchanges worldwide 
@@ -46,12 +48,8 @@ To summarize, you need to have completed the following steps to have a functiona
 4.	Complete layer 3 route advertisement by attaching a group of organized routes to your circuit. For the Azure private peering, this requires connecting your ExpressRoute gateway in the VNet to your circuit.
 Figure1 below highlights the completed components of this deployment.  When all the above steps are finished, BGP routes advertised from your private network should be flowing into the VNet, and BGP routes from the VNet should be flowing through the ExpressRoute circuit to your BGP edge device. 
 
-
-
-
-
-
 Figure 1, BPG route advertisement through the Azure private peering
+
 ![alt text](https://github.com/jgmitter/images/blob/master/ERBW.jpg)
 
 
