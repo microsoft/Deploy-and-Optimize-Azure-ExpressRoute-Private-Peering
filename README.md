@@ -77,7 +77,14 @@ Figure 1, BPG route advertisement through the Azure private peering
 
 ![alt text](https://github.com/jgmitter/images/blob/master/ERBW.jpg)
 
-### ExpressRoute Private Peering to VNet Hub and Spoke:  https://github.com/microsoft/Common-Design-Principles-for-a-Hub-and-Spoke-VNET-Archiecture
+### ExpressRoute Private Peering to VNet Hub and Spoke:      https://github.com/microsoft/Common-Design-Principles-for-a-Hub-and-Spoke-VNET-Archiecture
+
+
+
+
+
+
+
 
 
 
